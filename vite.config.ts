@@ -12,5 +12,5 @@ export default defineConfig({
         "@": path.resolve(__dirname, "./src"),
       },
     },
-    base: '/nicola-dg.github.io/'
+    base: '/'
 })

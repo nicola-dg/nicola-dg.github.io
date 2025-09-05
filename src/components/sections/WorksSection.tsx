@@ -22,12 +22,10 @@ const WorksSection = () => {
                     Una selezione dei progetti realizzati per abitazioni private e aziende.
                 </Paragraph>
 
-                <div className="relative flex flex-col items-center ring ">
+                <div className="relative flex flex-col items-center ">
 
                     {/* Galleria Immagini */}
-                    <div className="max-w-screen-sm mx-auto">
-                        <ImageGallery></ImageGallery>
-                    </div>
+                    <ImageGallery></ImageGallery>
 
 
 
@@ -69,7 +67,7 @@ const ImageGallery = () => {
 
 
     return (
-        <Carousel className="w-full max-w-xs">
+        <Carousel className="w-full max-w-xs md:max-w-full">
             <CarouselContent>
                 {images.map((image, index) => (
                     <CarouselItem key={index} className="basis-full lg:basis-1/3">

@@ -33,9 +33,9 @@ const ContactsSection = () => {
                 </div>
 
                 <div className="lg:w-2/3">
-                    <p className="font-bold lg:text-xl">Vuoi richiedere un preventivo?</p>
-                    <p className="lg:text-lg">Puoi contattarci direttamente tramite email a <span className="font-semibold lg:text-lg">email.email@gmail.com </span>
-                        oppure telefonicamente WhatsApp o telefonata al <span className="font-semibold lg:text-lg">333444555666.</span></p>
+                    <Subtitle><p className="font-bold">Vuoi richiedere un preventivo?</p></Subtitle>
+                    <Paragraph>Puoi contattarci direttamente tramite email a <span className="font-semibold text-lg md:text-xl lg:text-2xl">email.email@gmail.com </span>
+                        oppure telefonicamente WhatsApp o telefonata al <span className="font-semibold text-lg md:text-xl lg:text-2xl">333444555666.</span></Paragraph>
                 </div>
 
             </div>

@@ -1,3 +1,5 @@
+import Paragraph from "../ui/paragraph";
+import Title from "../ui/title";
 
 
 
@@ -19,14 +21,16 @@ const WorkWithUsSection = () => {
 
     return (
         <section className="pb-22 flex flex-col items-center">
-            <h1 className="text-6xl font-bold mb-8">Lavora con Noi</h1>
+            <Title>Lavora con Noi</Title>
 
-            <div className="relative lg:flex lg:justify-center">
-                <div className="lg:w-1/2">
+            <div className="relative flex">
+                <div>
                     {paragrafi.map((paragrafo, i) => (
-                        <p key={i} className="mb-4 pr-20">
-                            {paragrafo}
-                        </p>
+                        <div className="mb-4 pr-20">
+                            <Paragraph key={i}>
+                                {paragrafo}
+                            </Paragraph>
+                        </div>
                     ))}
                 </div>
 

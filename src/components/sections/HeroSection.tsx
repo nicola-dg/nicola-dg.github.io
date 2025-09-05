@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 const HeroSection = () => {
     return (
         <section className="pb-48">
-            <div className="flex flex-row md:gap-8">
+            <div className="flex  relative flex-row justify-center md:gap-8">
                 <div className="flex flex-1 flex-col">
                     <div className="pb-4">
                         <Title />
@@ -16,7 +16,7 @@ const HeroSection = () => {
                     </div>
                 </div>
 
-                <div className="translate-y-2/3 -translate-x-7/8  md:-translate-y-0  md:-translate-x-0 md:static  md:flex md:justify-center">
+                <div className="absolute right-0 bottom-0 md:-translate-y-0 md:-translate-x-0 md:static  md:flex md:justify-center">
                     <div className="h-32 w-32 md:h-80 md:w-[300px] lg:h-100 lg:w-100">
                         <MyImage></MyImage>
                     </div>

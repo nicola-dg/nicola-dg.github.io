@@ -6,8 +6,55 @@ import {
     CarouselNext,
     CarouselPrevious,
 } from "@/components/ui/carousel"
+import Title from "../ui/title";
+import Paragraph from "../ui/paragraph";
 
 const WorksSection = () => {
+
+    return (
+        <section className="pb-42">
+            <div className="flex flex-col gap-4 items-center">
+
+                <Title>I Nostri Lavori</Title>
+
+
+                <Paragraph>
+                    Una selezione dei progetti realizzati per abitazioni private e aziende.
+                </Paragraph>
+
+                <div className="relative flex flex-col items-center ring ">
+
+                    {/* Galleria Immagini */}
+                    <div className="max-w-screen-sm mx-auto">
+                        <ImageGallery></ImageGallery>
+                    </div>
+
+
+
+
+                    {/* Immagine constructors */}
+                    <div className="absolute bottom-0 left-0 translate-y-2/3 -translate-x-1/3 ">
+                        <div className="ml-auto h-40 w-64 lg:h-50 lg:w-80">
+                            <MyImage></MyImage>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+        </section>
+    );
+};
+
+export default WorksSection;
+
+
+const ImageGallery = () => {
+
 
     const images = [
         "/images/undraw_qa-engineers.svg",
@@ -21,68 +68,37 @@ const WorksSection = () => {
     ];
 
 
-
     return (
-        <section className="pb-42">
-            <div className="flex flex-col gap-4 items-center">
-
-                <h1 className="text-6xl font-bold mb-4">
-                    I Nostri Lavori
-                </h1>
-
-                <div className="relative ring">
-
-                    {/* Galleria Immagini */}
-                    <div className="w-xs md:w-full">
-                        <Carousel>
-                            <CarouselContent>
-                                {images.map((image, index) => (
-                                    <CarouselItem key={index} className="basis-full lg:basis-1/3">
-                                        <div className="p-1">
-                                            <Card>
-                                                <CardContent className="flex items-center justify-center p-6">
-                                                    <img src={image} alt="alt" />
-                                                </CardContent>
-                                            </Card>
-                                        </div>
-                                    </CarouselItem>
-                                ))}
-                            </CarouselContent>
-                            <CarouselPrevious />
-                            <CarouselNext />
-                        </Carousel>
-                    </div>
-
-
-
-                    {/* Immagine constructors */}
-                    <div className="absolute bottom-0 left-0 translate-y-2/3 -translate-x-1/3 ">
-                        <div className="ml-auto h-40 w-64 lg:h-50 lg:w-80">
-
-                            <img
-                                src="/images/undraw_construction-workers.svg"
-                                alt="Immagine decorativa"
-                                className="w-full max-w-sm"
-                            />
-
+        <Carousel className="w-full max-w-xs">
+            <CarouselContent>
+                {images.map((image, index) => (
+                    <CarouselItem key={index} className="basis-full lg:basis-1/3">
+                        <div className="p-1">
+                            <Card>
+                                <CardContent className="flex aspect-square items-center justify-center p-6">
+                                    <img src={image} alt="alt" className="w-full" />
+                                </CardContent>
+                            </Card>
                         </div>
-                    </div>
+                    </CarouselItem>
+                ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+        </Carousel>
+    )
+}
 
 
 
 
-                </div>
+const MyImage = () => {
+    return (
+        <img
+            src="/images/undraw_construction-workers.svg"
+            alt="Immagine decorativa"
+            className="w-full max-w-sm"
+        />
 
-
-
-            </div>
-        </section>
-    );
-};
-
-
-
-
-
-export default WorksSection;
-
+    )
+}

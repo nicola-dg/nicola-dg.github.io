@@ -1,3 +1,6 @@
+import Paragraph from "../ui/paragraph";
+import Subtitle from "../ui/subtitle";
+import Title from "../ui/title";
 
 
 const ContactsSection = () => {
@@ -7,14 +10,13 @@ const ContactsSection = () => {
 
     return (
         <section className="pb-22 flex flex-col items-center">
-            <h1 className="text-6xl font-bold mb-8 lg:mb-16">
-                Contatti
-            </h1>
+
+            <Title>Contatti</Title>
 
             <div className="flex flex-col">
                 <div>
-                    <p className="font-bold lg:text-xl">Hai un emergenza che richiede il nostro intervento?</p>
-                    <p className="lg:text-lg">Chiamaci subito al <span className="font-semibold lg:text-lg">5556667777888</span></p>
+                    <Subtitle><p className="font-bold">Hai un emergenza che richiede il nostro intervento?</p></Subtitle>
+                    <Paragraph>Chiamaci subito al <span className="font-semibold lg:text-2xl">5556667777888</span></Paragraph>
                 </div>
 
                 {/* Immagine contatti */}

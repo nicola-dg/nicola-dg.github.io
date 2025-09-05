@@ -16,7 +16,7 @@ const PromozioniSection = () => {
         <section className="pb-22 flex flex-col items-center">
             <Title>Promozioni</Title>
 
-            <div className="flex">
+            <div className="flex relative">
 
                 <div className="lg:order-2">
                     {paragrafi.map((paragrafo, i) => (

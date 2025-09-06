@@ -9,9 +9,9 @@ const HeroSection = () => {
             <div className="flex relative flex-row justify-center gap-4 md:gap-8 ">
 
 
-                <div className="flex flex-1 flex-col lg:gap-4">
+                <div className="flex flex-1 flex-col gap-4">
 
-                    <div className="pb-4  md:w-full flex flex-col gap-4">
+                    <div className="md:w-full flex flex-col gap-2">
                         <Title>Tecnal<span className="text-blue-900">2000</span></Title>
 
                         <Subtitle>
@@ -43,20 +43,24 @@ const HeroSection = () => {
 const Buttons = () => {
     return (
         <div className="flex flex-col md:flex-row gap-4">
-            <Button className="text-base md:text-lg lg:text-xl md:h-12 lg:h-16">
-                <Newspaper className="md:!w-6 md:!h-6 lg:!w-10 lg:!h-10" />
-                <span className="hidden md:block">Richiedi un</span>
-                <span>Preventivo</span>
+            <Button className="text-base md:text-lg lg:text-xl md:h-12 lg:h-16" asChild>
+                <a href="#contatti">
+                    <Newspaper className="md:!w-6 md:!h-6 lg:!w-10 lg:!h-10" />
+                    <span className="hidden md:block">Richiedi un</span>
+                    <span>Preventivo</span>
+                </a>
             </Button>
 
-            <Button variant="outline" className="text-base md:text-lg lg:text-xl md:h-12 lg:h-16">
-                <div className="flex items-center gap-2">
-                    <TriangleAlert className="md:!w-6 md:!h-6 lg:!w-10 lg:!h-10" />
-                    <div className="flex gap-1.5">
-                        <span className="hidden md:block">Chiama per un</span>
-                        <span>Emergenza</span>
+            <Button variant="outline" className="text-base md:text-lg lg:text-xl md:h-12 lg:h-16" asChild>
+                <a href="#contatti">
+                    <div className="flex items-center gap-2">
+                        <TriangleAlert className="md:!w-6 md:!h-6 lg:!w-10 lg:!h-10" />
+                        <div className="flex gap-1.5">
+                            <span className="hidden md:block">Chiama per un</span>
+                            <span>Emergenza</span>
+                        </div>
                     </div>
-                </div>
+                </a>
             </Button>
         </div>
     )

@@ -13,7 +13,7 @@ const PromozioniSection = () => {
 
 
     return (
-        <section className="pb-22 flex flex-col items-center">
+        <section className="pb-22 flex flex-col items-center gap-4">
             <Title>Promozioni</Title>
 
             <div className="flex relative">

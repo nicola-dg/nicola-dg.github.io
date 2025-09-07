@@ -17,7 +17,6 @@ const WorksSection = () => {
 
                 <Title>I Nostri Lavori</Title>
 
-
                 <Paragraph>
                     Una selezione dei progetti realizzati per abitazioni private e aziende.
                 </Paragraph>
@@ -27,9 +26,6 @@ const WorksSection = () => {
                     {/* Galleria Immagini */}
                     <ImageGallery></ImageGallery>
 
-
-
-
                     {/* Immagine constructors */}
                     <div className="absolute bottom-0 left-0 translate-y-2/3 -translate-x-1/3 ">
                         <div className="ml-auto h-40 w-64 lg:h-50 lg:w-80">
@@ -37,11 +33,7 @@ const WorksSection = () => {
                         </div>
                     </div>
 
-
-
                 </div>
-
-
 
             </div>
         </section>
@@ -53,28 +45,27 @@ export default WorksSection;
 
 const ImageGallery = () => {
 
-
     const images = [
-        "/images/undraw_qa-engineers.svg",
-        "/images/undraw_qa-engineers.svg",
-        "/images/undraw_qa-engineers.svg",
-        "/images/undraw_qa-engineers.svg",
-        "/images/undraw_qa-engineers.svg",
-        "/images/undraw_qa-engineers.svg",
-        "/images/undraw_qa-engineers.svg",
-        "/images/undraw_qa-engineers.svg"
+        "/images/ferro/persiana_napoletana.JPG",
+        "/images/ferro/cancello.JPG",
+        "/images/ferro/cancello_pedonale.JPG",
+        "/images/ferro/porta_ferro.JPG",
+        "/images/ferro/balaustra.JPG"
     ];
 
-
     return (
-        <Carousel className="w-full max-w-xs md:max-w-full">
+        <Carousel className="w-full max-w-xs md:max-w-md lg:max-w-full">
             <CarouselContent>
                 {images.map((image, index) => (
                     <CarouselItem key={index} className="basis-full lg:basis-1/3">
-                        <div className="p-1">
-                            <Card>
-                                <CardContent className="flex aspect-square items-center justify-center p-6">
-                                    <img src={image} alt="alt" className="w-full" />
+                        <div className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg p-2">
+                            <Card className="aspect-square w-full overflow-hidden">
+                                <CardContent className="p-0 h-full">
+                                    <img
+                                        src={image}
+                                        alt={`Lavoro ${index + 1}`}
+                                        className="w-full h-full object-cover"
+                                    />
                                 </CardContent>
                             </Card>
                         </div>
@@ -87,9 +78,6 @@ const ImageGallery = () => {
     )
 }
 
-
-
-
 const MyImage = () => {
     return (
         <img
@@ -97,6 +85,5 @@ const MyImage = () => {
             alt="Immagine decorativa"
             className="w-full max-w-sm"
         />
-
     )
 }

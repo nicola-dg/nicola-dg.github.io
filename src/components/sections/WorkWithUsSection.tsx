@@ -20,7 +20,7 @@ const WorkWithUsSection = () => {
 
 
     return (
-        <section className="pb-22 flex flex-col items-center gap-4">
+        <section id="lavora-con-noi" className="pb-22 flex flex-col items-center gap-4 scroll-mt-20">
             <Title>Lavora con Noi</Title>
 
             <div className="relative flex">

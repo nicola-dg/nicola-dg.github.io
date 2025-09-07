@@ -5,8 +5,8 @@ import Title from "../ui/title";
 
 const HistorySection = () => {
     return (
-        <section className="pb-32">
-            <div className="flex flex-col items-center gap-4">
+        <section id="chi-siamo" className="pb-32 scroll-mt-20">
+            <div className="flex flex-col items-center gap-4 ">
 
                 <Title>La Nostra Storia</Title>
 

@@ -12,7 +12,7 @@ import Paragraph from "../ui/paragraph";
 const WorksSection = () => {
 
     return (
-        <section className="pb-42">
+        <section id="servizi" className="pb-42 scroll-mt-20">
             <div className="flex flex-col gap-4 items-center">
 
                 <Title>I Nostri Lavori</Title>

@@ -9,9 +9,9 @@ const ContactsSection = () => {
 
 
     return (
-        <section className="pb-22 flex flex-col items-center gap-4">
+        <section id="contatti" className="pb-22 flex flex-col items-center gap-4 scroll-mt-20">
 
-            <Title><span id="contatti">Contatti</span></Title>
+            <Title>Contatti</Title>
 
             <div className="flex flex-col">
                 <div>

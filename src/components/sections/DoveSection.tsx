@@ -15,8 +15,8 @@ const DoveSection = () => {
 
 
     return (
-        <section className="pb-22 flex flex-col gap-4">
-            
+        <section id="dove-trovarci" className="pb-22 flex flex-col gap-4 scroll-mt-20">
+
             <div className="text-nowrap flex justify-center">
                 <Title>Dove Ci troviamo</Title>
             </div>

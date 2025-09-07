@@ -13,7 +13,7 @@ const PromozioniSection = () => {
 
 
     return (
-        <section className="pb-22 flex flex-col items-center gap-4">
+        <section id="promo" className="pb-22 flex flex-col items-center gap-4 scroll-mt-20">
             <Title>Promozioni</Title>
 
             <div className="flex relative">

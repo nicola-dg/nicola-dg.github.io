@@ -8,14 +8,6 @@ const Footer = () => {
                     Tecnall 2000
                 </div>
 
-                {/* Links */}
-                <div className="flex space-x-6 mb-4 md:mb-0">
-                    <a href="#" className="hover:text-white transition-colors">About</a>
-                    <a href="#" className="hover:text-white transition-colors">Services</a>
-                    <a href="#" className="hover:text-white transition-colors">Contact</a>
-                    <a href="#" className="hover:text-white transition-colors">Privacy</a>
-                </div>
-
                 {/* Copyright */}
                 <div className="text-sm text-gray-400">
                     &copy; {new Date().getFullYear()} Tecnall 2000. All rights reserved.

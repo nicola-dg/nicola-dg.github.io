@@ -9,7 +9,7 @@ const HeroSection = () => {
             <div className="flex relative flex-row justify-center gap-4 md:gap-8">
 
 
-                <div className="flex flex-1 flex-col gap-4">
+                <div className="flex md:max-w-xs lg:max-w-full flex-1 flex-col gap-4 ">
 
                     <div className="md:w-full flex flex-col gap-2">
                         <Title>Tecnal<span className="text-blue-900">2000</span></Title>
@@ -42,7 +42,7 @@ const HeroSection = () => {
 
 const Buttons = () => {
     return (
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col lg:flex-row gap-4">
             <Button className="text-base md:text-lg lg:text-xl md:h-12 lg:h-16" asChild>
                 <a href="#contatti">
                     <Newspaper className="md:!w-6 md:!h-6 lg:!w-10 lg:!h-10" />

@@ -5,12 +5,12 @@ const Footer = () => {
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
                 {/* Logo / Branding */}
                 <div className="mb-4 md:mb-0 font-inter text-white font-bold text-lg">
-                    Tecnall 2000
+                    Tecnal 2000
                 </div>
 
                 {/* Copyright */}
                 <div className="text-sm text-gray-400">
-                    &copy; {new Date().getFullYear()} Tecnall 2000. All rights reserved.
+                    &copy; {new Date().getFullYear()} Tecnal 2000. All rights reserved.
                 </div>
             </div>
         </footer>

@@ -2,9 +2,9 @@
 // @ts-nocheck
 const Logo = () => {
     return (
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-            Logo
-        </h1>
+        <a href="#home">
+            <img src="images/logo-white.svg" alt="" className="w-14 h-14" />
+        </a>
     );
 };
 

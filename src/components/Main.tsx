@@ -9,14 +9,14 @@ import WorkWithUsSection from "./sections/WorkWithUsSection";
 
 const Main = () => {
     return (
-        <div className="flex flex-col p-4 md:p-8 lg:p-16">
+        <div className="flex flex-col p-4 md:p-8 lg:p-32">
             <HeroSection></HeroSection>
             <HistorySection></HistorySection>
             <WorksSection></WorksSection>
             <ContactsSection></ContactsSection>
             <DoveSection></DoveSection>
             <WorkWithUsSection></WorkWithUsSection>
-            <PromozioniSection></PromozioniSection>
+            {/* <PromozioniSection></PromozioniSection> */}
         </div>
     )
 }

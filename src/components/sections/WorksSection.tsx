@@ -15,7 +15,7 @@ const WorksSection = () => {
         <section id="servizi" className="pb-42 scroll-mt-20">
             <div className="flex flex-col gap-4 items-center">
 
-                <Title>I Nostri Lavori</Title>
+                <Title>I Nostri Servizi</Title>
 
                 <Paragraph>
                     Una selezione dei progetti realizzati per abitazioni private e aziende.

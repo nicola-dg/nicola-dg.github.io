@@ -21,7 +21,7 @@ const ContactsSection = () => {
                 </div>
 
                 {/* Immagine contatti */}
-                <div className="mx-auto py-2 lg:py-0 lg:-translate-y-1/6">
+                <div className="mx-auto py-2">
                     <div className="h-36 w-64 lg:h-full lg:w-xl">
 
                         <img

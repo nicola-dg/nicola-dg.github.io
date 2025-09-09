@@ -5,6 +5,11 @@ import Title from "../ui/title";
 
 const ContactsSection = () => {
 
+    const contactData = {
+        email: "tecnal2000.official@gmail.com",
+        cel: "3394662281"
+    }
+
 
 
 
@@ -16,8 +21,12 @@ const ContactsSection = () => {
             <div className="flex flex-col">
                 <div>
                     <Subtitle><p className="font-bold">Hai un emergenza che richiede il nostro intervento oppure vuoi richiedere un preventivo?</p></Subtitle>
-                    <Paragraph>Puoi contattarci direttamente tramite email a <span className="font-semibold text-lg md:text-xl lg:text-2xl">email.email@gmail.com </span>
-                        oppure telefonicamente WhatsApp o telefonata al <span className="font-semibold text-lg md:text-xl lg:text-2xl">333444555666.</span></Paragraph>
+                    <Paragraph>Puoi contattarci direttamente tramite email a
+                        <a href="mailto:tecnal2000.official@gmail.com?subject=Richiesta Preventivo o Emergenza" className="inline-block px-1"><span className="font-semibold text-lg md:text-xl lg:text-2xl text-blue-800 hover:underline"> {contactData.email} </span></a>
+
+                        oppure telefonicamente WhatsApp o telefonata al
+                        <a href="tel:+393394662281" className="inline-block px-1"><span className="font-semibold text-lg md:text-xl lg:text-2xl text-blue-800 hover:underline"> {contactData.cel} </span></a>
+                    </Paragraph>
                 </div>
 
                 {/* Immagine contatti */}

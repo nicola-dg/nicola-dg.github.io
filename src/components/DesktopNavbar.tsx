@@ -13,8 +13,8 @@ const DesktopNavbar = () => {
                 {/* Links */}
                 <div className="flex space-x-6 items-center">
 
-                    {NavLinks.slice(0,4).map(link => (
-                        <a href={link.href} className="hover:text-blue-300">{link.text}</a>
+                    {NavLinks.slice(0, 4).map(link => (
+                        <a key={link.href} href={link.href} className="hover:text-blue-300">{link.text}</a>
                     ))}
                     <MyMenu></MyMenu>
                 </div>

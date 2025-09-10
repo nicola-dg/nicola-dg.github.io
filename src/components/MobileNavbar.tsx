@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetDescription, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import Logo from "./ui/logo"
 import NavLinks from "@/data/NavLinks"
@@ -30,7 +30,12 @@ const MobileNavbar = () => {
                     </Button>
                 </SheetTrigger>
 
+                <SheetDescription className="sr-only">
+                    Link per navigare la pagina
+                </SheetDescription>
+
                 <SheetContent side="right" className="px-6 py-8 z-6000">
+                    <SheetTitle className="hidden">Menu</SheetTitle>
                     <nav className="flex flex-col gap-4">
                         {NavLinks.map((link) => (
                             <button

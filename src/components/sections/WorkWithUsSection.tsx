@@ -20,14 +20,14 @@ const WorkWithUsSection = () => {
 
 
     return (
-        <section id="lavora-con-noi" className="pb-22 flex flex-col items-center gap-4 scroll-mt-20">
+        <section id="lavora-con-noi" className=" flex flex-col items-center gap-4 scroll-mt-20">
             <Title>Lavora con Noi</Title>
 
             <div className="relative flex">
                 <div>
                     {paragrafi.map((paragrafo, i) => (
-                        <div className="mb-4 pr-20">
-                            <Paragraph key={i}>
+                        <div className="mb-4 pr-20" key={i}>
+                            <Paragraph>
                                 {paragrafo}
                             </Paragraph>
                         </div>

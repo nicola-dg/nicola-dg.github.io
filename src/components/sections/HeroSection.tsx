@@ -5,7 +5,7 @@ import Title from "../ui/title";
 
 const HeroSection = () => {
     return (
-        <section id="home" className="pt-24 pb-32 lg:pt-12 scroll-mt-40">
+        <section id="home" className="pt-24 pb-32 lg:pt-12 scroll-mt-40 mx-auto">
             <div className="flex relative flex-row justify-center gap-4 md:gap-8">
 
 
